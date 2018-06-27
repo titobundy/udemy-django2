@@ -1,0 +1,29 @@
+$ virtualenv <nombre> --python=python3
+$ source <nombre>/bin/activate
+(env)$
+(env)$ pip install Django (ultima version)
+(env)$ pip install Django==version
+(env)$ python -m django --version
+(env)$ pip install pylint-django
+(env)$ deactivate
+
+(env)$ django-admin help --commands
+(env)$ django-admin startproject <nombre_proyecto>
+(env)$ cd <nombre_proyecto>
+
+(env)$ python manage.py runserver
+(env)$ python manage.py migrate
+
+# Crear App
+
+(env)$ python manage.py startapp <nombre_app>
+
+# Models
+
+(env)$ python manage.py makemigrations <nombre_app>
+
+(env)$ python manage.py migrate <nombre_app>
+
+
+# Template Tags
+https://docs.djangoproject.com/en/2.0/ref/templates/builtins/
